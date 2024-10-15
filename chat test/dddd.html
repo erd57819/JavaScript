@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산 결과 출력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input[type="number"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>두 개의 숫자를 입력한 후 연산결과를 웹 페이지에 출력하세요.</h1>
+    <input type="number" id="number1" placeholder="숫자 1을 입력하세요">
+    <input type="number" id="number2" placeholder="숫자 2를 입력하세요">
+    <button onclick="calculate()">연산결과</button>
+    <div id="result">연산결과: </div>
+
+    <script>
+        function calculate() {
+            // 입력된 값 가져오기
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+
+            // 두 숫자를 더함
+            const sum = num1 + num2;
+
+            // 결과 출력
+            document.getElementById('result').innerText = '연산결과: ' + sum;
+        }
+    </script>
+</body>
+
+</html>
