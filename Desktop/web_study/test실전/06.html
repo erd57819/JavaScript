@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title></title>
+  
+</head>
+<body>
+    <input type="text" id="text">
+    <p id="container"></p>
+    
+    <script>
+         
+        const inputField = document.getElementById("text");
+        const display = document.getElementById('container'); 
+
+        
+        inputField.addEventListener('input', function() {
+            
+            const inputValue = inputField.value;
+
+      
+            display.textContent = inputValue;
+        });
+      
+    </script>
+</body>
+</html>
+

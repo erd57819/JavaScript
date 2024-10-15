@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white
+        }
+
+        .light {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="light">
+        <h1>
+            인공지능사관학교
+        </h1>
+        <button id="btnText" onclick="changeMode()">dark 모드</button>
+    </div>
+
+    <script>
+        changeMode = () => {
+            const lihgt = document.getElementById('container')
+            const button = document.getElementById('btnText')
+
+            if (container.classList.contains('light')) {
+                console.log(container.classList.remove('light'));
+                console.log(container.classList.add('dark'));
+                button.textContent = 'light모드';
+
+            } else {
+                console.log(container.classList.remove('dark'));
+                console.log(container.classList.add('light'));
+                button.textContent = 'dark모드';
+
+            }
+
+
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
